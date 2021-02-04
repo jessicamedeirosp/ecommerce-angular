@@ -1,0 +1,29 @@
+.product-item {
+    border: 0;
+    text-align: center;
+
+    h5, p {
+        text-align: left;
+    }
+
+    h5 {
+        min-height: 70px;
+    }
+
+    .cart-text {
+        min-height: 100px; 
+    }
+
+    div.cart-title {
+        min-height: 80px; 
+        
+        h5 {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.btn-add-cart {
+    font-size: .85rem;
+}

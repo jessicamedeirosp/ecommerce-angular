@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-12 col-sm-6 col-lg-3" *ngFor="let item of products">
+      <div class="cart product-item">
+        <img class="cart-img-top" src="assets/image/{{ item.image }}" alt="cart image cap">
+        <div class="cart-body">
+          <div class="cart-title">
+            <h5 routerLink="/product/details/{{item.id}}">{{ item.name }}</h5>
+          </div>
+          <p class="cart-text">{{ item.description }}<br />
+            <small>{{ item.installments }}x {{ valueForInstallment(item.price, item.installments) | currency: "BRL"}}
+              sem juros</small>
+          </p>
+          <button class="btn btn-outline-primary text-uppercase btn-add-cart" (click)="addItemCart(item)">+ Adicionar
+            ao
+            carrinho</button>
+            </div>
+        </div>
+    </div>
+</div>
