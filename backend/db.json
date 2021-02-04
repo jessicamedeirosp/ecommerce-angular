@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": "1",      
+      "name": "Smartphone Galary",
+      "description": "Smartphone última geração",
+      "price": 1300.00,
+      "installments": 10,
+      "image": "01.png" 
+    },
+    {
+      "id": "2",      
+      "name": "Geladeira/Refrigerador Brastemp",
+      "description": "Geladeira Brastemp Frost Free Duplex - Branca 374l",
+      "price": 2223.00,
+      "installments": 10,
+      "image": "02.png" 
+    },
+    {
+      "id": "3",      
+      "name": "Smart TV 4k LED 70",
+      "description": "Smart TV 4k LED 70 LG 70UK6540 Wi-Fi HDR",
+      "price": 6554.05,
+      "installments": 10,
+      "image": "03.png" 
+    },
+    {
+      "id": "4",      
+      "name": "Fogão a Gás 5 Bocas Tripla Chama Automático",
+      "description": "Fogão a Gás 5 Bocas Tripla Chama Automático Agile Glass Preto Atlas",
+      "price": 899.90,
+      "installments": 10,
+      "image": "04.png" 
+    },
+    {
+      "id": "5",      
+      "name": "Notebook Ideapad",
+      "description": "Notebook Ideapad 300 Intel Core I5-8250u 8GB 1TB HD 15.6 W10 Prata - Lenovo",
+      "price": 2339.99,
+      "installments": 10,
+      "image": "05.png" 
+    },
+    {
+      "id": "6",      
+      "name": "Monitor Gamer LED 49",
+      "description": "Monitor Gamer LED 49 Curvo 1ms 14hz Double Full HD Ultra Wide - Samsung",
+      "price": 5999.90,
+      "installments": 10,
+      "image": "06.png" 
+    },
+    {
+      "id": "7",      
+      "name": "PlayStation 4 PRO 1TB",
+      "description": "Console Playstation 4 Pro 1TB + Controle Wireless DualShock 4",
+      "price": 3260.11,
+      "installments": 10,
+      "image": "07.png" 
+    }  
+  ],
+  "menus": [
+    {
+      "name": "Beleza e Saúde"
+    },
+    {
+      "name": "Bicicleta"
+    },
+    {
+      "name": "Cama box e Colchões"
+    },
+    {
+      "name": "Eletrodoméstico"
+    },
+    {
+      "name": "Eletrônicos"
+    },
+    {
+      "name": "Eletroportáteis"
+    },
+    {
+      "name": "Móveis"
+    },
+    {
+      "name": "Telefonia"
+    }
+  ]
+}
