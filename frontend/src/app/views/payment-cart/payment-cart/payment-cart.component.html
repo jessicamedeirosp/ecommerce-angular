@@ -1,0 +1,32 @@
+<div class="row product-payment-cart-minimum" *ngFor="let item of productsCart">
+  <div class="col-3 col-product-image">
+    <img src="assets/image/{{ item.image }}" alt="" class="img-fluid img-cart">
+  </div>
+  <div class="col-4 col-product-name-quantity">
+    <p>
+      <strong>{{ item.name }}</strong>
+      <br />
+      <small>Quantidade: {{ item.quantity }}</small>
+    </p>
+  </div>
+  <div class="col-3 col-product-price">
+    <p>
+      {{ item.total | currency: "BRL" }}
+    </p>
+  </div>
+  <div class="col-2 col-product-price text-center">
+    <span class="material-icons btn btn-danger" (click)="deleteProductCart(item)">
+      close
+    </span>
+  </div>
+</div>
+<div class="row" *ngIf="calculeTotal()">
+  <hr />
+  <div class="col-7"></div>
+  <div class="col-5">
+    <h4>{{ calculeTotal() | currency: "BRL" }}</h4>
+  </div>
+</div>
+<div class="row text-center" *ngIf="!calculeTotal()">
+  <div class="col">Seu carrinho está vazio</div>
+</div>
