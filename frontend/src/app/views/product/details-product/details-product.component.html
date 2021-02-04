@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12 col-sm-6 text-center">
+    <img src="assets/image/{{ product.image }}" alt="image-product" class="img-fluid">
+  </div>
+  <div class="col-12 col-sm-6">
+    <h1>{{ product.name }}</h1>
+    <h4>{{ product.description }}</h4>
+    <br />
+    <h3>{{ product.price | currency: "BRL" }}</h3>
+    <h6>{{ product.installments }}x {{ valueForInstallment(product.price, product.installments) | currency: "BRL" }}
+      sem juros</h6>
+    <hr />
+    <div class="form-group">
+      <label for="">Quantidade</label>
+      <input type="number" class="form-control input-quantity" name="quantity" #ctrl="ngModel"
+        (change)="setQuantity($event)" [(ngModel)]="quantity">
+    </div>
+    <button class="btn btn-outline-primary text-uppercase btn-add-cart" (click)="addItemCart(product, getQuantity());">+
+      Adicionar
+      ao
+      carrinho</button>
+  </div>
+</div>
